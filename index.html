@@ -22,13 +22,13 @@
           <img src="logo.png" alt="" />
           <h1>Today I Learned</h1>
         </div>
-        <button class="btn btn-large">Share a fact</button>
+        <button class="btn btn-large btn-open">Share a fact</button>
       </header>
-      <form class="fact-form">
+      <form class="fact-form hidden">
         <input type="text" name="" id="" placeholder="share a fact with the world" />
         <span>200</span>
         <input type="text" name="" id="" placeholder="Thrustworthy source.." />
-        <select name="" id="">
+        <select name="" id="" aria-label="factSelector">
           <option value="">Choose a fact:</option>
           <option value="all">All</option>
           <option value="technology">Technology</option>
@@ -56,7 +56,7 @@
             <li class="fact">
               <p>
                 React is being developed by Meta (formerly facebook)
-                <a href="https://opensource.fb.com/" class="source" target="_blank">(source)</a>
+                <a href="https://opensource.fb.com/" rel="noopener" class="source" target="_blank">(source)</a>
               </p>
               <span class="tag" style="background-color: #3b82f6">technology</span>
               <div class="vote-buttons">
@@ -70,6 +70,7 @@
                 Millennial dads spend 3 times as much time with their kids than their fathers spent with them. In 1982,
                 43% of fathers had never changed a diaper. Today, that number is down to 3%
                 <a
+                  rel="noopener"
                   href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
                   class="source"
                   target="_blank"
@@ -87,5 +88,6 @@
         </section>
       </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
